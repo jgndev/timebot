@@ -1,4 +1,3 @@
-// main.go
 package main
 
 import (
@@ -10,19 +9,14 @@ import (
 func main() {
 	e := echo.New()
 
+	// Middleware
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
+	// Compression
 	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
 		Level: 5,
 	}))
-
-	//e.Use(func(next echo.HandlerFunc) echo.HandlerFunc {
-	//	return func(c echo.Context) error {
-	//		c.Response().Header().Set("Cache-Control", "public, max-age=86400")
-	//		return next(c)
-	//	}
-	//})
 
 	// Static assets
 	e.Static("/public", "public")

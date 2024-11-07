@@ -24,16 +24,15 @@ templ TimeUpdate() {
 				@TimeCard("Central (CET)", local.GetCurrentTime("Europe/Paris"), "cet-time")
 				@TimeCard("Eastern (EET)", local.GetCurrentTime("Europe/Bucharest"), "eet-time")
 				@TimeCard("Moscow", local.GetCurrentTime("Europe/Moscow"), "msk-time")
-
 			</div>
-            <!-- APAC -->
-            <div class="flex flex-col">
-                <span class="text-4xl uppercase font-bold text-center">APAC</span>
-                @TimeCard("India", local.GetCurrentTime("Asia/Kolkata"), "ist-time")
-                @TimeCard("Hong Kong", local.GetCurrentTime("Asia/Shanghai"), "cst-time")
-                @TimeCard("Tokyo", local.GetCurrentTime("Asia/Tokyo"), "jst-time")
-                @TimeCard("Sydney", local.GetCurrentTime("Australia/Sydney"), "aedt-time")
-            </div>
+			<!-- APAC -->
+			<div class="flex flex-col">
+				<span class="text-4xl uppercase font-bold text-center">APAC</span>
+				@TimeCard("India", local.GetCurrentTime("Asia/Kolkata"), "ist-time")
+				@TimeCard("Hong Kong", local.GetCurrentTime("Asia/Shanghai"), "cst-time")
+				@TimeCard("Tokyo", local.GetCurrentTime("Asia/Tokyo"), "jst-time")
+				@TimeCard("Sydney", local.GetCurrentTime("Australia/Sydney"), "aedt-time")
+			</div>
 		</div>
 	</div>
 }

@@ -45,7 +45,7 @@ func UtcCard() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</span><div class=\"mt-8\"><button class=\"bg-zinc-600 text-zinc-100 uppercase px-4 py-2 rounded hover:bg-indigo-600 transition-colors\" onclick=\"copyToClipboard()\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</span><div class=\"mt-8\"><button class=\"black-button w-14\" onclick=\"copyToClipboard()\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

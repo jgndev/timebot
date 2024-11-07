@@ -135,15 +135,44 @@
     }
 
     .black-button {
-        @apply transition-all px-8 py-4 w-full min-w-full md:min-w-[18rem] md:max-w-[18rem] flex space-x-4 text-sm md:text-base items-center justify-center uppercase border border-zinc-700/50 text-zinc-200  hover:border-zinc-50 hover:shadow-md hover:no-underline rounded-md disabled:cursor-not-allowed;
+        @apply transition-all duration-200 ease-in-out
+        px-8 py-4 w-full
+        min-w-full md:min-w-[18rem] md:max-w-[18rem]
+        flex space-x-4
+        text-sm md:text-base
+        items-center justify-center uppercase
+        border border-zinc-700/50
+        text-zinc-200
+        hover:border-zinc-50
+        hover:shadow-lg
+        hover:no-underline
+        hover:transform hover:scale-[1.02]
+        hover:bg-zinc-800/30
+        active:scale-[0.98]
+        active:shadow-inner
+        active:border-zinc-400
+        rounded-md
+        disabled:cursor-not-allowed
+        disabled:opacity-50
+        disabled:hover:scale-100
+        disabled:hover:bg-transparent
+        disabled:hover:shadow-none;
     }
 
     .black-button > svg {
-        @apply fill-zinc-200;
+        @apply fill-zinc-200 transition-all duration-200 ease-in-out;
     }
 
     .black-button:hover > svg {
-        @apply transition-all delay-100 ease-in-out fill-white disabled:fill-zinc-200;
+        @apply fill-white transform scale-110;
+    }
+
+    .black-button:active > svg {
+        @apply scale-95;
+    }
+
+    .black-button:disabled > svg {
+        @apply fill-zinc-400 transform-none;
     }
 
     .brand-block {

@@ -11,14 +11,14 @@ templ UtcCard() {
 			<span id="utc-timestamp" class="text-3xl text-center font-bold">{ local.GetCurrentUtcTime() }</span>
 			<div class="mt-8">
 				<button
- 					class="bg-zinc-600 text-zinc-100 uppercase px-4 py-2 rounded hover:bg-indigo-600 transition-colors"
+ 					class="black-button w-14"
  					onclick="copyToClipboard()"
 				>
 					Copy
 				</button>
 			</div>
 			<div>
-			    <span id="copy-tooltip" style="visibility:hidden;">Copied!</span>
+				<span id="copy-tooltip" style="visibility:hidden;">Copied!</span>
 			</div>
 		</div>
 	</div>
